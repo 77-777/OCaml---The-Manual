@@ -356,7 +356,7 @@ let myTuples = (a : "b" : 3);
 | -------- | ------- | ----- |
 | Lwt  | Events & Promises | todo |
 | Mirage  | OCaml Platform| todo |
-| LablTk | UI | todo |
+| LablTk | GUI | todo |
 | Cryptokit | Security & Cryptography | todo |
 | Graphics Module | Charts & Graphics | todo |
 | Lambda Soup | HTML/XML Parser | todo |
@@ -364,12 +364,13 @@ let myTuples = (a : "b" : 3);
 | Str Module | Regex | |
 | | CSV Parser | |
 | | Interop | |
-|  | Interop | |
+| DynF | Interop | |
 | .NET | Interop | |
 | QT | Interop | |
-| | Computer Vision | |
-| | | |
-| | | |
+| openCV | Computer Vision | |
+| | Testing | |
+| Logs | Logging | |
+| | AOP | |
 
 <br>
 <br>
