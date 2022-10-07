@@ -2,11 +2,9 @@
 
 > Pragmatic information about Functional Programming and OCaml.
 
-## Table of Contents
-
 #### Audience
 
-### Seasoned Programmers
+* Seasoned Programmers
 
 > Examples:
 
@@ -127,6 +125,6 @@ let () =
 
 ```
 
-###### Beginers
+* Beginers
 
 
