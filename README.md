@@ -14,7 +14,6 @@ Click the sections below to expand.
 
 <br>
 <br>
-<br>
 
 <details>
   <summary> For Intermediate Programmers </summary>
@@ -493,7 +492,6 @@ end;;
 
 Click the sections below to expand.
 
-<br>
 <br>
 <br>
 
