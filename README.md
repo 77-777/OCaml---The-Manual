@@ -4,7 +4,7 @@
 
 ---
 
-## * For Seasoned Programmers
+## > For Seasoned Programmers
 
 #### Console Arguments & Printing
 
