@@ -6,7 +6,7 @@
 
 * Seasoned Programmers
 
-> Examples:
+Examples:
 
 ###### Console Arguments & Printing
 
