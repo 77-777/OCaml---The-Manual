@@ -508,7 +508,7 @@ Click the sections below to expand.
 
 ---
 
-Optional reading;
+Optional reading.
 
 The transition for an imperative programmer to functional/declarative programming is often the most frustrating and challenging task an individual has to face when introduced to the paradigm. I should know, since I'm actually in the process itself.
 
@@ -524,7 +524,7 @@ I will share with you what, as an imperative programmer, has been difficult for 
 
 ---
 
-Optional reading;
+Optional reading.
 
 Here is what I personally think is the biggest problem imperative programmers face when turning to the functional paradigm.
 The lack of a goal. I don't mean something as cheesy as setting up for a journey on a career or deciding what you want to become.
