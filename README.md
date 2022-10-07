@@ -138,6 +138,8 @@ let () =
 
 #### Web Framework
 
+#### Regex
+
 #### Parsing HTML/JSON/XML
 
 #### Error Handling & Exceptions
@@ -182,3 +184,7 @@ type my_type = {
 #### Functors
 
 ## > For Expert Programmers
+
+#### FFI
+
+#### DLLs
