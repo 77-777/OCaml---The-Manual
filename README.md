@@ -7,7 +7,9 @@
 <br>
 
 <details>
-  <summary> ## > For Intermediate Programmers </summary>
+  <summary> > For Intermediate Programmers </summary>
+
+## > For Intermediate Programmers
 
 ### Spawning a project & building
 
@@ -384,6 +386,9 @@ let myTuples = (a : "b" : 3);
 
 </details>
 
+<details>
+  <summary> > For Beginner Programmers </summary>
+
 ## > For Beginner Programmers
 
 ### Types & Records
@@ -456,6 +461,11 @@ end;;
 
 ### Pointers/Refs
 
+</details>
+
+<details>
+  <summary> > For Expert Programmers </summary>
+
 ## > For Expert Programmers
 
 ### FFI
@@ -463,3 +473,5 @@ end;;
 ### DLLs / Shared Libraries
 
 ### Compiler/Interpreter Tweaks
+
+</details>
