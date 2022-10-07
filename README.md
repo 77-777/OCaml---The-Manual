@@ -132,11 +132,57 @@ let () =
 
 #### Sockets
 
+```ocaml
+open Sys;
+open Unix;
+
+(*Synchronous*)
+let () =
+    let ipaddr = "127.0.0.1" and
+    let port = 8080 and
+    let sock = socket AF_INET SOCK_STREAM 0 in
+        connect sock (ADDR_INET(ipaddr, port));
+        match fork () with
+            | 0 -> send sock data len
+            | _ -> some error.
+
+(*Asynchronous*)
+let () =
+    todo.
+```
+
 #### GUI
+
+```ocaml
+open Sys;
+open Unix;
+
+(*Synchronous*)
+let () =
+    
+```
 
 #### Web Requests
 
+```ocaml
+open Sys;
+open Unix;
+
+(*Synchronous*)
+let () =
+    
+```
+
 #### Web Framework
+
+```ocaml
+open Sys;
+open Unix;
+
+(*Synchronous*)
+let () =
+    
+```
 
 #### Regex
 
@@ -175,7 +221,7 @@ type box = {
 #### Modules
 
 ```ocaml
-module box = 
+module Box = 
 struct
     type t = {
 
