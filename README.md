@@ -150,6 +150,11 @@ let () =
 
 #### Common Libraries
 
+* Lwt
+* Mirage
+* Labltk
+* cryptokit
+
 <br>
 <br>
 
@@ -158,7 +163,7 @@ let () =
 #### Types & Records
 
 ```ocaml
-type my_type = Int;;
+type my_type = int;;
 
 type my_type = {
     some_var : String;
@@ -170,14 +175,52 @@ type my_type = {
 #### Modules
 
 ```ocaml
+module my_module = 
+struct
+    type t = {
 
+    }
+
+    let f = expr
+    let g = expr
+end;;
 ```
 
 #### Functions
 
+```ocaml
+let my_function arg1 arg2 = 
+    arg1 + arg2;;
+
+let this_func a : float b : string : unit = 
+    another expr;
+
+let my_func (x : int) (y : string) : bool =
+    some expr;;
+```
+
 #### Variants & Polymorphism
 
+```ocaml
+type my_type = int | float | string | dog | cat of steel;;
+
+type 'type_of container = flat | cat of steel;;
+```
+
 #### OOP Handling
+
+```ocaml
+class my_class constr =
+object (self)
+    val _member = ...
+    val _members = ...
+
+    method some_method = ...
+    method another_method = ...
+end;;
+```
+
+#### Interfaces (Module Types)
 
 #### Generics
 
