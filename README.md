@@ -526,7 +526,7 @@ I will share with you what, as an imperative programmer, has been difficult for 
 
 Optional reading.
 
-Here is what I personally think is the biggest problem imperative programmers face when turning to the functional paradigm.
+```Here is what I personally think is the biggest problem imperative programmers face when turning to the functional paradigm.
 The lack of a goal. I don't mean something as cheesy as setting up for a journey on a career or deciding what you want to become.
 
 No, a goal as in, "What is my aim to do, in order to get my program written, and for it to work".
@@ -545,9 +545,11 @@ A seasoned imperative programmer wants to know:
 * What's the best convention and guidelines for writing this kind of code.
 
 Out of these, arguably, the first and third questions are by far, the most important, for an aim in getting started.
+```
 
 ---
 
+```
 What does the functional programming material provided to most imperative programmers give to them?
 
 
@@ -561,9 +563,11 @@ They are then thrown into the type system and spend 70 pages reading about build
 Then it proceeds to show you how it does it by providing pattern matching and guards (with even more recursivity). When you are done, it introduces a concept called Monads, Higher Order Functions and Functors. Holy cat.
 
 Do you see the problem?
+```
 
 ---
 
+```
 None of the above tell the programmer:
 
 1. What he should aim for.
@@ -582,7 +586,7 @@ A functional programmer is tasked with four major concerns.
 3. Separation of IO & Concern
 4. Strict expression evaluation & Immutability
 
-
+```
 
 
 </details>
