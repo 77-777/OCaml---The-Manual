@@ -9,8 +9,6 @@
 <details>
   <summary> For Intermediate Programmers </summary>
 
-## Cookbook
-
 ### Spawning a project & building
 
 * Ecosystem & Environment
@@ -389,8 +387,6 @@ let myTuples = (a : "b" : 3);
 <details>
   <summary> For Beginner Programmers </summary>
 
-## > Basics
-
 ### Types & Records
 
 ```ocaml
@@ -465,8 +461,6 @@ end;;
 
 <details>
   <summary> For Expert Programmers </summary>
-
-## Advanced
 
 ### FFI
 
