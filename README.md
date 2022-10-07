@@ -124,8 +124,26 @@ let () =
 
 ```
 
+#### Sockets
+
+#### GUI
+
+#### OOP Handling
+
+#### Web Requests
+
+#### Web Framework
+
+#### Parsing HTML/JSON/XML
+
+#### Error Handling & Exceptions
+
+#### Database Access / ORM
+
+#### The Standard API
+
+#### Common Libraries
+
 ## > For Beginner Programmers
 
 ## > For Expert Programmers
-
-
