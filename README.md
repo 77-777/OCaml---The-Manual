@@ -2,9 +2,9 @@
 
 > Pragmatic information about Functional Programming and OCaml.
 
-#### For Seasoned Programmers
+## For Seasoned Programmers
 
-###### Console Arguments & Printing
+#### Console Arguments & Printing
 
 ```ocaml
 open Sys;;
@@ -18,7 +18,7 @@ let () =
             print_endline (string_of_int arg_length);;
 ```
 
-###### Files & Directories
+#### Files & Directories
 
 ```ocaml
 open Sys;;
@@ -65,7 +65,7 @@ let () =
 
 ```
 
-###### Data Type Conversion
+#### Data Type Conversion
 
 ```ocaml
 (* Typecasting. *)
@@ -78,7 +78,7 @@ let () =
                     exit 0;;
 ```
 
-###### String Handling
+#### String Handling
 
 ```ocaml
 (* You can also use the ^ operator for concatenation. *)
@@ -101,7 +101,7 @@ let () =
             *)
 ```
 
-###### Threading & Process Handling
+#### Threading & Process Handling
 
 ```ocaml
 (* Executing other programs. *)
