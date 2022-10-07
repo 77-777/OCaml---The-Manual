@@ -479,7 +479,7 @@ end;;
 </details>
 
 <details>
-  <summary> Functional Programming </summary>
+  <summary> For Functional Programming Dummies </summary>
 
 </details>
 
