@@ -7,7 +7,7 @@
 
 ## > For Intermediate Programmers
 
-#### Spawning a project & building
+### Spawning a project & building
 
 * Ecosystem & Environment
   * dune
@@ -24,7 +24,7 @@
 <br>
 <br>
 
-#### Console Arguments & Printing
+### Console Arguments & Printing
 
 ```ocaml
 open Sys;;
@@ -38,7 +38,7 @@ let () =
             print_endline (string_of_int arg_length);;
 ```
 
-#### File IO
+### File IO
 
 ```ocaml
 open Sys;;
@@ -66,7 +66,7 @@ let () =
             exit 0;;
 ```
 
-#### Directory & File Operations
+### Directory & File Operations
 
 ```ocaml
 (* Directory & File Manipulation *)
@@ -85,7 +85,7 @@ let () =
     *)
 ```
 
-#### Data Type Conversion
+### Data Type Conversion
 
 ```ocaml
 (* Typecasting. *)
@@ -98,7 +98,7 @@ let () =
                     exit 0;;
 ```
 
-#### String Handling
+### String Handling
 
 ```ocaml
 (* You can also use the ^ operator for concatenation. *)
@@ -121,7 +121,7 @@ let () =
             *)
 ```
 
-#### Threading & Process Handling
+### Threading & Process Handling
 
 ```ocaml
 (* Executing other programs. *)
@@ -141,7 +141,7 @@ let () =
 
 ```
 
-#### Sockets
+### Sockets
 
 ```ocaml
 open Sys;
@@ -162,7 +162,7 @@ let () =
     todo.
 ```
 
-#### GUI
+### GUI
 
 ```ocaml
 open Sys;
@@ -173,7 +173,7 @@ let () =
     
 ```
 
-#### Web Requests
+### Web Requests
 
 ```ocaml
 open Sys;
@@ -184,7 +184,7 @@ let () =
     
 ```
 
-#### Web Framework
+### Web Framework
 
 ```ocaml
 open Sys;
@@ -194,17 +194,18 @@ open Unix;
 let () =
     
 ```
-#### Logging
 
-#### Regex
+### Logging
 
-#### Parsing HTML/JSON/XML
+### Regex
 
-#### Error Handling & Exceptions
+### Parsing HTML/JSON/XML
 
-#### Database Access / ORM
+### Error Handling & Exceptions
 
-#### Keywords in OCaml
+### Database Access / ORM
+
+### Keywords in OCaml
 
 ```ocaml
 (* Declarations of variables and functions*)
@@ -231,7 +232,7 @@ int, string, float, bool, bytes, list, char, unit, tuples, array, exn, format, o
 Fancy, Pair, Boring, Any, None, Some, Nothing, ()/unit, True, False, Empty
 ```
 
-#### Symbols in OCaml
+### Symbols in OCaml
 
 * State Symbols
 
@@ -302,9 +303,9 @@ let myTuples = (a : "b" : 3);
 0.5 /. 4.0;;(* Floats *)
 ```
 
-#### The Standard API
+### The Standard API
 
-#### Common Libraries
+### Common Libraries
 
 * Lwt
 * Mirage
@@ -316,7 +317,7 @@ let myTuples = (a : "b" : 3);
 
 ## > For Beginner Programmers
 
-#### Types & Records
+### Types & Records
 
 ```ocaml
 type box = int;;
@@ -328,7 +329,7 @@ type box = {
 };;
 ```
 
-#### Modules
+### Modules
 
 ```ocaml
 module Box = 
@@ -342,7 +343,7 @@ struct
 end;;
 ```
 
-#### Functions
+### Functions
 
 ```ocaml
 let my_function arg1 arg2 = 
@@ -355,7 +356,7 @@ let my_func (x : int) (y : string) : bool =
     some expr;;
 ```
 
-#### Variants & Polymorphism
+### Variants & Polymorphism
 
 ```ocaml
 type my_type = int | float | string | dog | cat of steel;;
@@ -363,9 +364,9 @@ type my_type = int | float | string | dog | cat of steel;;
 type 'type_of container = flat | cat of steel;;
 ```
 
-#### Variables, If Statements, Control Flow
+### Variables, If Statements, Control Flow
 
-#### OOP Handling
+### OOP Handling
 
 ```ocaml
 class my_class constr =
@@ -378,14 +379,14 @@ object (self)
 end;;
 ```
 
-#### Interfaces (Module Types)
+### Interfaces (Module Types)
 
-#### Generics
+### Generics
 
-#### Functors
+### Functors
 
 ## > For Expert Programmers
 
-#### FFI
+### FFI
 
-#### DLLs
+### DLLs
