@@ -477,3 +477,12 @@ end;;
 ### Compiler/Interpreter Tweaks
 
 </details>
+
+<details>
+  <summary> Functional Programming </summary>
+
+</details>
+
+## Abstract
+
+Todo.
