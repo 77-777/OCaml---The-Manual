@@ -15,7 +15,7 @@
   * LSP
   * ocamlc
 
-`sudo apt-get install ocaml opam`
+`sudo apt-get install ocaml utop opam`
 
 `dune init project`
 `dune build`
@@ -194,6 +194,7 @@ open Unix;
 let () =
     
 ```
+#### Logging
 
 #### Regex
 
@@ -231,6 +232,66 @@ Fancy, Pair, Boring, Any, None, Some, Nothing, ()/unit, True, False, Empty
 ```
 
 #### Symbols in OCaml
+
+```ocaml
+(* These two below are exactly the same. *)
+(+) 3 6;; (* Infix function/symbol operator *)
+3 + 6;; (* Prefix function/symbol operator *)
+
+^ (* Concatenate strings *)
+= (* Is the equality operator (==) *)
+<> (* Is the not equal to operator *)
+~ (* Labeling *)
+
+** (* Exponential *)
+
+<- (* Assignment of data/state to mutable IO (e.g arrays or variables in objects) *)
+:: (* Append to a list *)
+[| a ; b ; c |] (* Create a list *)
+( * ) or (a : b) (* Create a tuple *)
+:= (* Create a reference *)
+| (* Pattern matching and variants. *)
+@@ (* Function composition. Where f(x) is f x, f @@ x is just f x *)
+
+-> (* Lambda *)
+$ (* Contextual symbol *)
+|> (* Similar to bash piping. Call a function, pass the result to the next function. myFunction |> myOtherFunction |> someFunction *)
+;; (* Terminate expression in utop toplevel. *)
+; (*Separate record fields and terminate expression in code.*)
+_ (* Anonymous / ambiguous slot for "any" variable *)
+
+arr.(0) (* Index access *)
+# (* Equivalent to accessing methods from object e.g myObject#myMethod *)
+! (* Negation *)
+
+1_000_000;; (* Comma/underscore notation *)
+1,000,000;; (* Comma/underscore notation *)
+
+0.5 *. 4.0;; (* Floats *)
+0.5 /. 4.0;;(* Floats *)
+
+*
+
+'
+`
+
+(* Comparison *)
+!=
+>
+<
+<=
+>=
+!
+
+(* Lists *)
+let myEmptyList = [1; 2; 3];
+
+(* Tuples *)
+let myTuples = (a : "b" : 3);
+
+(* Labels *)
+~someLabel:int
+```
 
 #### The Standard API
 
