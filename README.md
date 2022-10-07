@@ -546,7 +546,13 @@ A seasoned imperative programmer wants to know:
 
 Out of these, arguably, the first and third questions are by far, the most important, for an aim in getting started.
 
+<br>
+<br>
+
 ---
+
+<br>
+<br>
 
 What does the functional programming material provided to most imperative programmers give to them?
 
@@ -562,7 +568,13 @@ Then it proceeds to show you how it does it by providing pattern matching and gu
 
 Do you see the problem?
 
+<br>
+<br>
+
 ---
+
+<br>
+<br>
 
 None of the above tell the programmer:
 
@@ -570,8 +582,13 @@ None of the above tell the programmer:
 2. Why he should aim for (whatever the goal is)
 3. Analogies to which they can map their imperative knowledge to.
 
+<br>
+<br>
 
 ---
+
+<br>
+<br>
 
 Enough ranting. I'll cover exactly what an imperative programmer needs to do to make that switch.
 
