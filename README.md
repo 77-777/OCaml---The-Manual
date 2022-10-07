@@ -163,9 +163,9 @@ let () =
 #### Types & Records
 
 ```ocaml
-type my_type = int;;
+type box = int;;
 
-type my_type = {
+type box = {
     some_var : String;
     another_var : Int;
     yet_another_var : Float
