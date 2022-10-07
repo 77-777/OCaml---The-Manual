@@ -6,6 +6,10 @@
 <br>
 <br>
 
+## Audience
+
+Click the sections below to expand.
+
 <details>
   <summary> For Intermediate Programmers </summary>
 
