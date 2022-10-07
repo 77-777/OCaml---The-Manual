@@ -352,13 +352,24 @@ let myTuples = (a : "b" : 3);
 
 ### Common Libraries
 
-| Library  | Purpose | Usage |
+| Library  | Purpose | Comments |
 | -------- | ------- | ----- |
 | Lwt  | Events & Promises | todo |
 | Mirage  | OCaml Platform| todo |
 | LablTk | UI | todo |
 | Cryptokit | Security & Cryptography | todo |
 | Graphics Module | Charts & Graphics | todo |
+| Lambda Soup | HTML/XML Parser | todo |
+| Yojson | JSON Parser | todo |
+| Str Module | Regex | |
+| | CSV Parser | |
+| | Interop | |
+|  | Interop | |
+| .NET | Interop | |
+| QT | Interop | |
+| | Computer Vision | |
+| | | |
+| | | |
 
 <br>
 <br>
@@ -437,4 +448,4 @@ end;;
 
 ### FFI
 
-### DLLs
+### DLLs / Shared Libraries
