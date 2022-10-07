@@ -357,24 +357,26 @@ let myTuples = (a : "b" : 3);
 | Lwt  | Events & Promises | todo |
 | Mirage  | OCaml Platform| todo |
 | LablTk | GUI | todo |
+| vec | Data Structures - Dynamic Arrays | https://github.com/aionescu/vec |
 | Cryptokit | Security & Cryptography | todo |
 | Graphics Module | Charts & Graphics | todo |
-| Lambda Soup | HTML/XML Parser | todo |
+| LambdaSoup | HTML/XML Parser | todo |
 | Yojson | JSON Parser | todo |
-| Str Module | Regex | |
-| Ocaml-csv | CSV Parser | |
-| | Interop | |
-| DynF | Interop | |
-| .NET | Interop | |
-| QT | Interop | |
-| Ocaml-opencv | Computer Vision | |
-| | Testing | |
-| Logs | Logging | |
-|  | AOP | |
-| Ocaml-electron | Browser as a Service | |
-| Qanat | ORM | |
-| PPX | Meta Programming | |
-| Caqti | Databases & SQL | |
+| Str Module | Regex | todo |
+| Ocaml-csv | CSV Parser | todo |
+| | Interop | todo |
+| DynF / FFI | Interop | todo |
+| .NET | Interop | todo |
+| QT | Interop | todo |
+| pyml | Bindings for Python | todo |
+| Ocaml-opencv | Computer Vision | todo |
+| | Testing | todo |
+| Logs | Logging | todo |
+|  | AOP | todo |
+| Ocaml-electron | Browser as a Service | todo |
+| Qanat | ORM | todo |
+| PPX | Meta Programming | todo |
+| Caqti | Databases & SQL | todo |
 
 <br>
 <br>
