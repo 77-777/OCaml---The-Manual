@@ -20,7 +20,7 @@ let () =
             print_endline (string_of_int arg_length);;
 ```
 
-#### Files & Directories
+#### File IO
 
 ```ocaml
 open Sys;;
@@ -46,23 +46,9 @@ let () =
             flush stdout;
             close_out output_channel;
             exit 0;;
-
-
-(* Directory & File Manipulation *)
-let () =
-    let my_dir = mkdir "test" 777 ();;
-
-    (*
-        > functions from Sys module.
-
-        is_directory ...
-        file_exists ...
-        remove ...
-        rename ...
-        mkdir ...
-        rmdir ...
-    *)
 ```
+
+#### Directory & File Operations
 
 #### Data Type Conversion
 
