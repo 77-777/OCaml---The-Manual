@@ -178,22 +178,49 @@ let () =
 ### Web Requests
 
 ```ocaml
-open Sys;
-open Unix;
+(* Example provided by https://github.com/anmonteiro/piaf *)
 
-(*Synchronous*)
+open Piaf;;
+open Lwt_result.Syntax;;
+
+let get_sync url = 
+    Lwt_main.run begin
+        print_endline("Sending request...");
+
+        let* response = Client.Oneshot.get (Uri.of_string url) in
+            if (Status.is_successful response.status) then
+                Body.to_string response.body
+            else
+                let message = Status.to_string response.status in
+                Lwt.return (Error (`Msg message))
+    end
+
 let () =
+    match get_sync "https://example.com" with
+        | Ok body -> print_endline body
+        | Error error -> let message = Error.to_string error in
+                            prerr_endline ("Error: " ^ message)
     
 ```
 
 ### Web Framework
 
 ```ocaml
-open Sys;
-open Unix;
+(* Example provided by https://aantron.github.io/dream/ *)
 
-(*Synchronous*)
-let () =
+let hello who = 
+    <html>
+        <body>
+            <h1>Hello, <%s who %>!</h1>
+        </body>
+    </html>
+
+let () = 
+    Dream.run
+        @@ Dream.logger
+            @@ Dream.router [
+                Dream.get "/" (fun _ -> Dream.html (hello "world"));
+            ]
     
 ```
 
