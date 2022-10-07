@@ -18,6 +18,8 @@ Click the sections below to expand.
 <details>
   <summary> For Intermediate Programmers </summary>
 
+---
+
 ### Spawning a project & building
 
 * Ecosystem & Environment
@@ -396,6 +398,8 @@ let myTuples = (a : "b" : 3);
 <details>
   <summary> For Beginner Programmers </summary>
 
+---
+
 ### Types & Records
 
 ```ocaml
@@ -471,6 +475,8 @@ end;;
 <details>
   <summary> For Expert Programmers </summary>
 
+---
+
 ### FFI
 
 ### DLLs / Shared Libraries
@@ -497,5 +503,7 @@ Click the sections below to expand.
 
 <details>
   <summary> Motivation </summary>
+
+---
 
 </details>
