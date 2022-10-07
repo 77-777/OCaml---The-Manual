@@ -7,6 +7,12 @@
 
 ## > For Intermediate Programmers
 
+#### Spawning a project & building
+
+dune
+opam
+lsp
+
 #### Console Arguments & Printing
 
 ```ocaml
@@ -128,8 +134,6 @@ let () =
 
 #### GUI
 
-#### OOP Handling
-
 #### Web Requests
 
 #### Web Framework
@@ -144,6 +148,37 @@ let () =
 
 #### Common Libraries
 
+<br>
+<br>
+
 ## > For Beginner Programmers
+
+#### Types & Records
+
+```ocaml
+type my_type = Int;;
+
+type my_type = {
+    some_var : String;
+    another_var : Int;
+    yet_another_var : Float
+};;
+```
+
+#### Modules
+
+```ocaml
+
+```
+
+#### Functions
+
+#### Variants & Polymorphism
+
+#### OOP Handling
+
+#### Generics
+
+#### Functors
 
 ## > For Expert Programmers
