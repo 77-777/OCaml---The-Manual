@@ -2,7 +2,9 @@
 
 > Pragmatic information about Functional Programming and OCaml.
 
-## For Seasoned Programmers
+---
+
+## * For Seasoned Programmers
 
 #### Console Arguments & Printing
 
