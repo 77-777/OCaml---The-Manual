@@ -1,6 +1,7 @@
 # OCaml - The Manual
 
 > Pragmatic information about Functional Programming and OCaml.
+
 > Written with a belief in "learn by example" and "osmosis".
 
 <br>
