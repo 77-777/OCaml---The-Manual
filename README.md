@@ -27,7 +27,6 @@ open Sys;;
 (* For input_line, close_in and close_out, stdout .*)
 
 (* Reading files. *)
-
 let () =
     let my_file = "file-to-open.txt" in
     let input_channel = open_in my_file in
@@ -40,7 +39,6 @@ let () =
 
 
 (* Writing files. *)
-
 let () =
     let my_file = "file-to-open.txt" in
     let output_channel = open_out my_file in
@@ -49,8 +47,8 @@ let () =
             close_out output_channel;
             exit 0;;
 
-(* Directory & File Manipulation *)
 
+(* Directory & File Manipulation *)
 let () =
     let my_dir = mkdir "test" 777 ();;
 
@@ -64,7 +62,6 @@ let () =
         mkdir ...
         rmdir ...
     *)
-
 ```
 
 #### Data Type Conversion
