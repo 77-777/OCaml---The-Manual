@@ -167,12 +167,24 @@ let () =
 ### GUI
 
 ```ocaml
-open Sys;
-open Unix;
+open Tk;;
 
-(*Synchronous*)
-let () =
-    
+let spawnWidgets parent = 
+    let btn = Button.create 
+        ~text: "Click me" 
+        ~command: (fun () -> closeTk ()) parent;
+    pack [btn];
+
+let setupWnd wnd title xy = 
+    Wm.title_set wnd title;
+    Wm.geometry_set wnd xy;
+
+let () = 
+    let main_wnd = openTk () in
+        setupWnd main_wnd "GUI Application" "400 x 200" ();
+        spawnWidgets wnd ();
+
+    mainLoop ();;
 ```
 
 ### Web Requests
@@ -225,6 +237,10 @@ let () =
 ```
 
 ### Logging
+```ocaml
+(* Example provided by https://github.com/anmonteiro/piaf *)
+
+```
 
 ### Regex
 
