@@ -508,7 +508,7 @@ Click the sections below to expand.
 
 ---
 
-The transition for an imperative programmer to functional/declarative programming is often the most frustrating and challenging task an individual has to face when introduced to the paradigm. I should know, since I'm actually in the process.
+The transition for an imperative programmer to functional/declarative programming is often the most frustrating and challenging task an individual has to face when introduced to the paradigm. I should know, since I'm actually in the process itself.
 
 This is my "adventure", diving in the functional programming paradigm with the OCaml language.
 
@@ -522,14 +522,14 @@ I will share with you what, as an imperative programmer, has been difficult for 
 
 ---
 
-Here is what I, personally think, is the biggest problem imperative programmers face when turning to functional paradigm.
-"It's a lacking goal". I don't mean something as cheesy as setting up for a journey on a career or anything like that.
+Here is what I personally think is the biggest problem imperative programmers face when turning to the functional paradigm.
+The lack of a goal. I don't mean something as cheesy as setting up for a journey on a career or deciding what you want to become.
 
 No, a goal as in, "What is my aim to do, in order to get my program written, and for it to work".
 
-To which, a poor imperative programmer will obviously turn to thinking about the syntax step by step. It is how we/they naturally approach problems and it isn't a wrong approach.
+To which, a poor imperative programmer will obviously turn to thinking about the syntax step by step and following logic as originally taught. It is how we/they naturally approach problems and it isn't a wrong approach.
 
-The problem isn't that what they're doing is wrong. The problem is that the information being fed to them by the documentation and by material which "claims" to teach functional programming or the language at hand, **is not answering their questions.**
+The problem isn't that what they're doing is wrong. The problem is that the information being fed to us by the documentation and by material which "claims" to teach functional programming or the language at hand, **is not answering our questions.**
 
 A seasoned imperative programmer wants to know:
 
@@ -538,8 +538,9 @@ A seasoned imperative programmer wants to know:
 * What is my API and where can I find references for more functions and objects/structures.
 * What does the layout of my project and my code look like?
 * How do I handle x, y, z. Where x may be error handling, y logging and z calls or interop.
+* What's the best convention and guidelines for writing this kind of code.
 
-Out of these, arguably, the first and third questions are by far, the most important.
+Out of these, arguably, the first and third questions are by far, the most important, for an aim in getting started.
 
 ---
 
@@ -549,9 +550,9 @@ What does the functional programming material provided to most imperative progra
 
 First off, it gives functions. Fair enough. Obviously useful. But functions with recursivity.
 
-Then they are given records and types, which, again, fair enough, useful. But with other conundrums like typeclasses and module types.
+Then they are given records and types, which, again, fair enough, useful. But with other conundrums like typeclasses and module types. Not to mention they spend an awful amount of time discussing functional arity and currying.
 
-They are then thrown into the type system and spend 70 pages reading about building a tree structure with abstract types or talks about how great the language is because it is supports lazy behaviour, that it's fabulous and elegant and whatever glorious deeds it can do.
+They are then thrown into the type system and spend 70 pages reading about building a tree structure with abstract types or talks about how great the language is because it is supports lazy behaviour, that it's fabulous and elegant and whatever glorious deeds it can do using first class citizen entities.
 
 Then it proceeds to show you how it does it by providing pattern matching and guards (with even more recursivity). When you are done, it introduces a concept called Monads, Higher Order Functions and Functors. Holy cat.
 
@@ -568,14 +569,14 @@ None of the above tell the programmer:
 
 ---
 
-Enough ranting.
+Enough ranting. I'll cover exactly what an imperative programmer needs to do to make that switch.
 
-A functional programmer is tasked with three major concerns.
+A functional programmer is tasked with four major concerns.
 
 1. State management.
-2. Functional purity.
+2. Functional purity & Transformation.
 3. Separation of IO & Concern
-
+4. Strict expression evaluation & Immutability
 
 
 
