@@ -5,7 +5,7 @@
 <br>
 <br>
 
-## > For Seasoned Programmers
+## > For Intermediate Programmers
 
 #### Console Arguments & Printing
 
@@ -124,6 +124,8 @@ let () =
 
 ```
 
-* Beginers
+## > For Beginner Programmers
+
+## > For Expert Programmers
 
 
