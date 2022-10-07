@@ -488,6 +488,8 @@ end;;
 <details>
   <summary> For Functional Programming Dummies </summary>
 
+---
+
 </details>
 
 <br>
@@ -505,5 +507,77 @@ Click the sections below to expand.
   <summary> Motivation </summary>
 
 ---
+
+The transition for an imperative programmer to functional/declarative programming is often the most frustrating and challenging task an individual has to face when introduced to the paradigm. I should know, since I'm actually in the process.
+
+This is my "adventure", diving in the functional programming paradigm with the OCaml language.
+
+I will share with you what, as an imperative programmer, has been difficult for me to tackle or understand, and solutions to how one can make that transition easier. This will also act as a centralized area containing as much useful information about OCaml and it's syntax as I can get.
+
+
+</details>
+
+<details>
+  <summary> What is The Damn Goal..? </summary>
+
+---
+
+Here is what I, personally think, is the biggest problem imperative programmers face when turning to functional paradigm.
+"It's a lacking goal". I don't mean something as cheesy as setting up for a journey on a career or anything like that.
+
+No, a goal as in, "What is my aim to do, in order to get my program written, and for it to work".
+
+To which, a poor imperative programmer will obviously turn to thinking about the syntax step by step. It is how we/they naturally approach problems and it isn't a wrong approach.
+
+The problem isn't that what they're doing is wrong. The problem is that the information being fed to them by the documentation and by material which "claims" to teach functional programming or the language at hand, **is not answering their questions.**
+
+A seasoned imperative programmer wants to know:
+
+* How do I declare a function with arguments and return values.
+* How do I create objects and structures.
+* What is my API and where can I find references for more functions and objects/structures.
+* What does the layout of my project and my code look like?
+* How do I handle x, y, z. Where x may be error handling, y logging and z calls or interop.
+
+Out of these, arguably, the first and third questions are by far, the most important.
+
+---
+
+What does the functional programming material provided to most imperative programmers give to them?
+
+
+
+First off, it gives functions. Fair enough. Obviously useful. But functions with recursivity.
+
+Then they are given records and types, which, again, fair enough, useful. But with other conundrums like typeclasses and module types.
+
+They are then thrown into the type system and spend 70 pages reading about building a tree structure with abstract types or talks about how great the language is because it is supports lazy behaviour, that it's fabulous and elegant and whatever glorious deeds it can do.
+
+Then it proceeds to show you how it does it by providing pattern matching and guards (with even more recursivity). When you are done, it introduces a concept called Monads, Higher Order Functions and Functors. Holy cat.
+
+Do you see the problem?
+
+---
+
+None of the above tell the programmer:
+
+1. What he should aim for.
+2. Why he should aim for (whatever the goal is)
+3. Analogies to which they can map their imperative knowledge to.
+
+
+---
+
+Enough ranting.
+
+A functional programmer is tasked with three major concerns.
+
+1. State management.
+2. Functional purity.
+3. Separation of IO & Concern
+
+
+
+
 
 </details>
