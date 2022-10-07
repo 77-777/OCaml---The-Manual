@@ -362,15 +362,19 @@ let myTuples = (a : "b" : 3);
 | Lambda Soup | HTML/XML Parser | todo |
 | Yojson | JSON Parser | todo |
 | Str Module | Regex | |
-| | CSV Parser | |
+| Ocaml-csv | CSV Parser | |
 | | Interop | |
 | DynF | Interop | |
 | .NET | Interop | |
 | QT | Interop | |
-| openCV | Computer Vision | |
+| Ocaml-opencv | Computer Vision | |
 | | Testing | |
 | Logs | Logging | |
-| | AOP | |
+|  | AOP | |
+| Ocaml-electron | Browser as a Service | |
+| Qanat | ORM | |
+| PPX | Meta Programming | |
+| Caqti | Databases & SQL | |
 
 <br>
 <br>
