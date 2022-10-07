@@ -527,7 +527,7 @@ I will share with you what, as an imperative programmer, has been difficult for 
 Optional reading.
 
 Here is what I personally think is the biggest problem imperative programmers face when turning to the functional paradigm.
-The lack of a goal. I don't mean something as cheesy as setting up for a journey on a career or deciding what you want to become.
+**The lack of a goal**. I don't mean something as cheesy as setting up for a journey on a career or deciding what you want to become.
 
 No, a goal as in, "What is my aim to do, in order to get my program written, and for it to work".
 
