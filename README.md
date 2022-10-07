@@ -9,9 +9,17 @@
 
 #### Spawning a project & building
 
-dune
-opam
-lsp
+* Ecosystem & Environment
+  * dune
+  * opam
+  * LSP
+  * ocamlc
+
+`sudo apt-get install ocaml opam`
+
+`dune init project`
+`dune build`
+`dune exec project`
 
 #### Console Arguments & Printing
 
@@ -192,6 +200,35 @@ let () =
 
 #### Database Access / ORM
 
+#### Keywords in OCaml
+
+```ocaml
+(* Declarations of variables and functions*)
+let, in, and, where, function, fun, ref
+
+(* Control Flow and switches *)
+if, else, elseif, match, with, catch, begin, end
+
+(* Loops *)
+for, to, do, while, rec
+
+(* Arrays *)
+array
+
+(* Structures, Variants & OOP *)
+type, class, object, struct, val, method, mutable, of
+
+(* Modules *)
+open, module, external, include
+
+(* Types *)
+int, string, float, bool, bytes, list, char, unit, tuples, array, exn, format, option, records, ref, variants, objects
+
+Fancy, Pair, Boring, Any, None, Some, Nothing, ()/unit, True, False, Empty
+```
+
+#### Symbols in OCaml
+
 #### The Standard API
 
 #### Common Libraries
@@ -252,6 +289,8 @@ type my_type = int | float | string | dog | cat of steel;;
 
 type 'type_of container = flat | cat of steel;;
 ```
+
+#### Variables, If Statements, Control Flow
 
 #### OOP Handling
 
