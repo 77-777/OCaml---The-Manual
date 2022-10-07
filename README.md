@@ -175,7 +175,7 @@ type my_type = {
 #### Modules
 
 ```ocaml
-module my_module = 
+module box = 
 struct
     type t = {
 
