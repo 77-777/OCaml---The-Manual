@@ -415,28 +415,86 @@ type box = {
 ### Modules
 
 ```ocaml
-module Box = 
+(* Declaration *)
+module Vehicle = 
 struct
-    type t = {
+    type speed = int
+    type colour = string
 
-    }
+    let drive () = 
+        ...;;
+    
+    let get_speed =
+        ...;;
 
-    let f = expr
-    let g = expr
+    let get_colour = 
+        ...;;
 end;;
+
+(* Import *)
+open Vehicle;;
+
+(* Usage *)
+Vehicle.drive;;
 ```
 
 ### Functions
 
 ```ocaml
-let my_function arg1 arg2 = 
-    arg1 + arg2;;
+(* Variable declaration *)
+let x = 20;;
 
-let this_func a : float b : string : unit = 
-    another expr;
+(* Variable declaration with explicit type *)
+let x : int = 20;;
 
-let my_func (x : int) (y : string) : bool =
-    some expr;;
+(* Official Functional declaration *)
+let myFunction = fun x y z -> x + y + z;;
+
+(* Most Common, Synctatic Sugar, Functional declaration *)
+let myFunction x y z = ...;;
+
+(* Functional declaration with explicit type *)
+let myFunction x : int y : float z : string = ...;; (* What about labels and naming the arguments? *)
+
+(* Functional declaration with labelled arguments (agnostic of position) *)
+let myFunction ~fileDest ~fileSrc = ...;;
+
+(* Pure Functional declaration with "function" having built-in pattern matching *)
+let myFunction = function
+   | Some y -> y
+   | None -> 0
+;;
+
+(* Function calling *)
+myFunction 1 2 3;;
+
+(* Recursive functions *)
+let rec myFunction arg1 = ...;
+
+(* Anonymous function *)
+fun x -> x * 2;;
+
+let y = (fun x -> x * 2);;
+
+(fun x -> x * 2) 20;; (* Since the value being returned is a function "f", you get "f 20" which is calling it on 20. *)
+
+(* Redifining the meaning of an operator (contextual/custom) *)
+let (/$) x y = x + y;;
+
+(* Function calling with composition *)
+myFunction @@ anotherFunction @@ someFunction;;
+
+(* Piping values from returned functions directly to other functions. *)
+myFunction1 |> myFunction2 |> myFunction3;;
+
+(* Optional arguments (? symbol) *)
+let myFunction ?arg x = ...;;
+
+(* Unit/IO based impure function declaration *)
+let myFunction () = ...;;
+
+(* First Class Module declaration. *)
+let myModule = (module ModuleName : moduleSignature);;
 ```
 
 ### Variants & Polymorphism
@@ -452,14 +510,33 @@ type 'type_of container = flat | cat of steel;;
 ### OOP Handling
 
 ```ocaml
-class my_class constr =
-object (self)
-    val _member = ...
-    val _members = ...
-
-    method some_method = ...
-    method another_method = ...
+(* Without constructor *)
+class MyCamel = 
+object
+   val mutable name = name'
+   method sayName = putStrLn name
 end;;
+
+(* Usage *)
+let john = new MyCamel;;
+(* need to mutate the setter here... *)
+john#sayName;;
+
+
+(* With constructor *)
+class MyCamel name' = 
+object
+   val name = name'
+   method sayName = putStrLn name
+end;;
+
+(* Usage *)
+let john = new MyCamel "John";;
+john#sayName;;
+
+(* Destructor *)
+
+(* Accessor & Mutators *)
 ```
 
 ### Interfaces (Module Types)
@@ -600,6 +677,7 @@ A functional programmer is tasked with four major concerns.
 4. Strict expression evaluation & Immutability
 
 
-
+todo todo
+explain the points.
 
 </details>
