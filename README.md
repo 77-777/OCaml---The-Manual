@@ -352,10 +352,13 @@ let myTuples = (a : "b" : 3);
 
 ### Common Libraries
 
-* Lwt
-* Mirage
-* Labltk
-* cryptokit
+| Library  | Purpose | Usage |
+| -------- | ------- | ----- |
+| Lwt  | Events & Promises | todo |
+| Mirage  | OCaml Platform| todo |
+| LablTk | UI | todo |
+| Cryptokit | Security & Cryptography | todo |
+| Graphics Module | Charts & Graphics | todo |
 
 <br>
 <br>
