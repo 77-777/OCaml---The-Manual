@@ -2,6 +2,8 @@
 
 > Pragmatic information about Functional Programming and OCaml.
 
+<br>
+<br>
 
 ## > For Seasoned Programmers
 
