@@ -50,6 +50,23 @@ let () =
 
 #### Directory & File Operations
 
+```ocaml
+(* Directory & File Manipulation *)
+let () =
+    let my_dir = mkdir "test" 777 ();;
+
+    (*
+        > functions from Sys module.
+
+        is_directory ...
+        file_exists ...
+        remove ...
+        rename ...
+        mkdir ...
+        rmdir ...
+    *)
+```
+
 #### Data Type Conversion
 
 ```ocaml
