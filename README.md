@@ -279,6 +279,18 @@ let () =
 ### Regex & Levenshtein
 
 ### Cryptography
+      
+```ocaml
+open Cryptokit;;
+      
+let () =
+  let plain_text = "my message" and
+  let cipher_text = "" and
+  let key = "my key" in
+      let aes_cipher = new Cryptokit.Block.aes_encrypt key in
+        aes_cipher#transform
+        ...
+```
 
 ### Parsing HTML/JSON/XML
 
