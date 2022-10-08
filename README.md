@@ -246,7 +246,9 @@ let () =
 
 ```ocaml
 (* Example provided by https://aantron.github.io/dream/ *)
-
+  
+open Dream;;
+  
 let hello who = 
     <html>
         <body>
@@ -293,10 +295,12 @@ let () =
 ```
 
 ### Parsing HTML/JSON/XML
+      
+* HTML/XML
 
 ```ocaml
-
-(* HTML/XML - example provided by https://aantron.github.io/lambdasoup/ *)
+(* Example provided by https://aantron.github.io/lambdasoup/ *)
+      
 open Soup;;
 
 let () = 
@@ -313,8 +317,13 @@ let () =
       ul $$ "li"
       |> iter (fun li ->
         trimmed_texts li |> String.concat "" |> print_endline)
+```
 
-(* JSON - example provided by https://github.com/ocaml-community/yojson *)
+* JSON
+      
+```ocaml
+(* Example provided by https://github.com/ocaml-community/yojson *)
+      
 open Yojson;;
 
 let () =
