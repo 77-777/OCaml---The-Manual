@@ -271,7 +271,6 @@ let () =
 
 ### Logging
 ```ocaml
-(* Example provided by https://github.com/anmonteiro/piaf *)
 
 ```
 
