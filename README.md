@@ -374,8 +374,6 @@ let myTuples = (a : "b" : 3);
 0.5 /. 4.0;;(* Floats *)
 ```
 
-### The Standard API
-
 <br>
 <br>
 
@@ -841,36 +839,74 @@ OPAM is the official Ocaml package manager.
 
 ---
 
-Work in progress. Add Jane Street extension API here as well.
+## The Standard API
 
 Click each module to expand and see their exposed functions and types.
+
+Work in progress. Add Jane Street extension API here as well.
 
 ```ocaml
 (* Importable Modules *)
 
 Sys
-Args
+Arg
+Stdlib
 
-(* Console, IO, Strings, Etc*)
-Print
-String
+(* Console, File IO, Etc *)
+Printf
+Scanf
+Format
+Printexc
 
-(* Date, Time, Math*)
+In_Channel
+Out_Channel
+Filename
+
+Marshal
+Callback
+Lazy
+Lexing
+
+Gc
+Oo
+
+
+(* Date, Time, Math *)
 Date
 Time
 Math
 
+(* Related to Types *)
+Char
+Bool
+String
+Bytes
+Int
+Float
+Complex
+
+Unit
+Option
+
 (* Data Structure Modules *)
 Array
-Queue
-Map
+Buffer
+Stream
 List
+Queue
+Seq
+Hashtbl
+Map
+Set
+Stack
 
-(* Algorithms are where *)
-
+(* Algorithms. Hashing, RNG, Sort, Etc. *)
+Random
+Digest
+Parsing
 
 (* Concurrency, Parallelism, Synchronization *)
-
+Atomic
 Thread
 Mutex
 Semaphore
