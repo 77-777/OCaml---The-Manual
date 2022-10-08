@@ -385,6 +385,7 @@ let myTuples = (a : "b" : 3);
 | | Testing | todo |
 | Logs | Logging | todo |
 |  | AOP | todo |
+|some_matrix/tensor lib|Machine Learning|todo|
 | Ocaml-electron | Browser as a Service | todo |
 | Qanat | ORM | todo |
 | PPX | Meta Programming | todo |
