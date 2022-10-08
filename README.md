@@ -656,6 +656,8 @@ end;;
 ### .mli Files
   
 ```ocaml
+(* Akin to header files in C, for storing interfaces and signatures, separate from implementation. *)
+
 
 ```
 
