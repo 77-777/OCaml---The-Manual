@@ -656,15 +656,47 @@ john#sayName;;
 ### Terminology
 
 * Purity
+  * Functions that produce no side effects. Given an input, the ouput should be the same on said input no matter what the state of the system is. If this rule is broken, the function is not pure.
+
 * State
+  * Commonly used to refer to structures, variables, code or the system which can change at any moment in time. Code changing in other places other than their grouped scope is considered bad practice.
+
 * Side Effect
+  * When a function emits the notion of modyfing state outside of it's scope such as globals or dependencies.
+
 * Expression
+  * Also called compute/computation, is any calculation or subexpression that MUST return a value as a result. In the functional mindset, a program is a series of expressions and subexpressions but ultimately going down to a single value outputted. ("Figure of speech")
+
 * Immutability
+  * Data created/assigned with values at spawn time which cannot be changed afterwards. Can be predicted since it is constant.
+
+* Mutable Data
+  * Data that can be affected by side effects/IO.
+
+* Records
+  * Groups of types aligned together under a single type. It is the "structure/struct" aspect of functional programming.
+
 * First Class Citizen
-* Higher Order Function
+  * Any entity that can be treated as you treat a variable, which means you can add it to another, compute it, pass it as an argument to another function and/or return it as a value.
+
+* Functions as First Class Citizens
+  * Functional paradigm prides itself on the notion that some (depends on language) functions are ultimately variables, can be declared as such, can be passed as arguments and can be returned. This is the notion of function pointers for those who know C. Commonly used for callbacks, events and other procedural code.
+
+* Higher Order Functions
+  * Functions that are treated as First Class Citizens. Basically function pointers. Ocaml functions are all higher order. In Haskell, not all functions are higher order functions.
+
+* Function Composition
+  * Calling functions which rely on values returned by calling another function. E.g. f(g(x)).
+
 * Arity
+  * The number of parameters a function has. Lengthy parameters for a function (e.g high Arity) smells of a badly coded function or a complex one.
+
 * Currying
+  * Complex functions which have a high arity need to be broken down. This simplification process is called currying.
+
 * Variants
+  * Ocaml's type system for creating generics and polymorphic values.
+
 * Functors
 * Lambda Calculus
 * Polymorphism
@@ -672,9 +704,10 @@ john#sayName;;
 * Meta Programming
 * Dependency Injection
 * Module Types
+* Monads
 * Zippers
 
-### Functional Aims
+### Functional Paradigm Aims
 
 * Functional Application
 * Function Purity
@@ -687,6 +720,8 @@ john#sayName;;
 * Immutability unless otherwise altered
 * Recursivity
 * Declaratively define problems
+* Write less, Do more
+* Lower bug rate
 
 <br>
 <br>
