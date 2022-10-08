@@ -288,6 +288,8 @@ Lwt.
 
 ### Database Access / ORM
 
+### Graphics
+
 ### Keywords in OCaml
 
 ```ocaml
