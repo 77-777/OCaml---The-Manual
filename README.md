@@ -294,6 +294,27 @@ let () =
 
 ### Parsing HTML/JSON/XML
 
+```ocaml
+
+(* HTML/XML - example provided by LambdaSoup *)
+
+
+
+(* JSON - example provided by https://github.com/ocaml-community/yojson *)
+open Yjson;;
+
+let () =
+  let json_str = {|
+    {
+      "number" : 42,
+      "string" : "yes",
+      "list": ["for", "sure", 42]
+    }
+  |} in
+      let json = Yojson.Safe.from_string json_str in
+        Format.printf "Parsed to %a" Yojson.Safe.pp json
+```
+
 ### Error Handling & Exceptions
 
 ### Timers, Events, Promises
