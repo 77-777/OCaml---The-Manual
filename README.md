@@ -1,4 +1,4 @@
-# OCaml - The Manual
+# 77-777's OCaml - The Manual
 
 > Pragmatic information about Functional Programming and OCaml.
 
