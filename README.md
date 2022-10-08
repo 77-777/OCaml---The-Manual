@@ -653,6 +653,41 @@ john#sayName;;
 
 ---
 
+### Terminology
+
+* Purity
+* State
+* Side Effect
+* Expression
+* Immutability
+* First Class Citizen
+* Higher Order Function
+* Arity
+* Currying
+* Variants
+* Functors
+* Lambda Calculus
+* Polymorphism
+* Generics
+* Meta Programming
+* Dependency Injection
+* Module Types
+* Zippers
+
+### Functional Aims
+
+* Functional Application
+* Function Purity
+* IO & Side Effect Separation
+* Reduce state and constrain/isolate it
+* Low Function Arity Through Currying
+* Simple & Flexible Data Transformation
+* Low Coupling, High Cohesion
+* Type Correctness
+* Immutability unless otherwise altered
+* Recursivity
+* Declaratively define problems
+
 <br>
 <br>
 
