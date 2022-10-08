@@ -278,7 +278,28 @@ let () =
 
 ### Config Storage
 
+```ocaml
+(* API provided by external library - config-file, get via OPAM. *)
+
+open Config;;
+
+let () =
+  ...
+
+```
+
 ### Regex & Levenshtein
+
+```ocaml
+
+let () =
+  let regex = Str.regexp "^regex$" in
+    let result = Str.string_match regex "your_string" 0
+    
+let () =
+  let first_str = "this" and second_str = "that" in
+    let distance = Levenshtein.S.distance first_str second_str
+```
 
 ### Cryptography
       
@@ -305,14 +326,11 @@ open Soup;;
 
 let () = 
   let soup = read_channel stdin |> parse in
-    (* Print the page title. *)
     soup $ "title" |> R.leaf_text |> print_endline;
 
-    (* Print the targets of all links. *)
     soup $$ "a[href]"
     |> iter (fun a -> print_endline (R.attribute "href" a));
 
-    (* Find the first unordered list. *)
     let ul = soup $ "ul" in
       ul $$ "li"
       |> iter (fun li ->
