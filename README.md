@@ -367,35 +367,6 @@ let myTuples = (a : "b" : 3);
 
 ### The Standard API
 
-### Common Libraries
-
-| Library  | Purpose | Comments |
-| -------- | ------- | ----- |
-| Lwt  | Events & Promises | todo |
-| Mirage  | OCaml Platform| todo |
-| LablTk | GUI | todo |
-| vec | Data Structures - Dynamic Arrays | https://github.com/aionescu/vec |
-| Cryptokit | Security & Cryptography | todo |
-| Graphics Module | Charts & Graphics | todo |
-| LambdaSoup | HTML/XML Parser | todo |
-| Yojson | JSON Parser | todo |
-| Str Module | Regex | todo |
-| Ocaml-csv | CSV Parser | todo |
-| | Interop | todo |
-| DynF / FFI | Interop | todo |
-| .NET | Interop | todo |
-| QT | Interop | todo |
-| pyml | Bindings for Python | todo |
-| Ocaml-opencv | Computer Vision | todo |
-| | Testing | todo |
-| Logs | Logging | todo |
-|  | AOP | todo |
-|some_matrix/tensor lib|Machine Learning|todo|
-| Ocaml-electron | Browser as a Service | todo |
-| Qanat | ORM | todo |
-| PPX | Meta Programming | todo |
-| Caqti | Databases & SQL | todo |
-
 <br>
 <br>
 
@@ -757,10 +728,71 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 <details>
    <summary>External Libraries</summary>
 
+---
+
+### Common Libraries
+
+| Library  | Purpose | Comments |
+| -------- | ------- | ----- |
+| Lwt  | Events & Promises | todo |
+| Mirage  | OCaml Platform| todo |
+| LablTk | GUI | todo |
+| vec | Data Structures - Dynamic Arrays | https://github.com/aionescu/vec |
+| Cryptokit | Security & Cryptography | todo |
+| Graphics Module | Charts & Graphics | todo |
+| LambdaSoup | HTML/XML Parser | todo |
+| Yojson | JSON Parser | todo |
+| Str Module | Regex | todo |
+| Ocaml-csv | CSV Parser | todo |
+| | Interop | todo |
+| DynF / FFI | Interop | todo |
+| .NET | Interop | todo |
+| QT | Interop | todo |
+| pyml | Bindings for Python | todo |
+| Ocaml-opencv | Computer Vision | todo |
+| | Testing | todo |
+| Logs | Logging | todo |
+|  | AOP | todo |
+|some_matrix/tensor lib|Machine Learning|todo|
+| Ocaml-electron | Browser as a Service | todo |
+| Qanat | ORM | todo |
+| PPX | Meta Programming | todo |
+| Caqti | Databases & SQL | todo |
+
 </details>
 
 <details>
    <summary>A Better Standard API Reference</summary>
+
+Work in progress. Add Jane Street extension API here as well.
+
+```ocaml
+(* Importable Modules *)
+
+Sys
+Args
+
+(* Console, IO, Strings, Etc*)
+Print
+
+(* Date, Time, Math*)
+
+
+(* Data Structure Modules *)
+Array
+Queue
+Map
+
+(* Algorithms are where *)
+
+
+(* Concurrency, Parallelism, Synchronization *)
+
+Thread
+Mutex
+Semaphore
+
+```
 
 </details>
 
