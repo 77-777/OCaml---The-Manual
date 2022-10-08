@@ -763,6 +763,8 @@ OPAM is the official Ocaml package manager.
 | PPX | Meta Programming | todo |
 | Caqti | Databases & SQL | todo |
 
+<br>
+
 </details>
 
 <details>
@@ -782,6 +784,7 @@ Args
 
 (* Console, IO, Strings, Etc*)
 Print
+String
 
 (* Date, Time, Math*)
 Date
@@ -792,6 +795,7 @@ Math
 Array
 Queue
 Map
+List
 
 (* Algorithms are where *)
 
