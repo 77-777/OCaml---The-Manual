@@ -762,8 +762,8 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 * Functional Application
   * Functional programming is all about having pure functions and calling those pure functions to transform your data. Everything is an expression and your IO should be separated and organized in a high level fashion.
 
-* Function Purity
-  * Functions without side effects that are agnostic of system state.
+* Functional Purity
+  * Functions without side effects that are agnostic of system state. As many as you can. Why? Said functions are easy to test, well design and don't depend on external factors. (in theory)
 
 * IO & Side Effect Separation
   * A tremendous amount of errors, bugs and malpractice happens as a result of poor state management. Having a more organized flow where IO is separate from pure code provides clarity to where errors may occur as well as visual guidance to where program logic/computation is located.
