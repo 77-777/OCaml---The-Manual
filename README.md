@@ -753,6 +753,18 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 </details>
 
 <br>
+
+<details>
+   <summary>External Libraries</summary>
+
+</details>
+
+<details>
+   <summary>A Better Standard API Reference</summary>
+
+</details>
+
+<br>
 <br>
 <br>
 
