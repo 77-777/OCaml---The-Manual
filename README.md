@@ -626,6 +626,9 @@ john#sayName;;
 
 ### Pointers/Refs
 
+<br>
+<br>
+
 </details>
 
 <details>
@@ -639,12 +642,18 @@ john#sayName;;
 
 ### Compiler/Interpreter Tweaks
 
+<br>
+<br>
+
 </details>
 
 <details>
   <summary> For Functional Programming Dummies </summary>
 
 ---
+
+<br>
+<br>
 
 </details>
 
@@ -760,5 +769,8 @@ A functional programmer is tasked with four major concerns.
 
 todo todo
 explain the points.
+
+<br>
+<br>
 
 </details>
