@@ -403,13 +403,31 @@ let myTuples = (a : "b" : 3);
 ### Types & Records
 
 ```ocaml
-type box = int;;
+(* The phantom type *)
+type dog;;
 
-type box = {
-    some_var : String;
-    another_var : Int;
-    yet_another_var : Float
-};;
+(* The simple type declaration *)
+type number = int;;
+
+(* The record type definition *)
+type person = { name: string; age: int; employed: bool };;
+
+(* The variant type creation (enum, polymorphism/generic, constraints) *)
+type animal = dog | wolf | cat | rat | bird;;
+
+type salary = Some int | Nothing;;
+
+(* Type parametrization (templates) *)
+type paramType actualType = { field_member: paramType };;
+
+(* Type granular modelling/specification *)
+type Magic = Number of Int | Number of Float;;
+
+(* Making a record's types mutable *)
+type person = { mutable name: string; mutable age: int; employed: bool };;
+
+(* First Class Fields *)
+todo
 ```
 
 ### Modules
@@ -441,13 +459,7 @@ Vehicle.drive;;
 ### Functions
 
 ```ocaml
-(* Variable declaration *)
-let x = 20;;
-
-(* Variable declaration with explicit type *)
-let x : int = 20;;
-
-(* Official Functional declaration *)
+(* "Official" Functional declaration *)
 let myFunction = fun x y z -> x + y + z;;
 
 (* Most Common, Synctatic Sugar, Functional declaration *)
@@ -505,7 +517,74 @@ type my_type = int | float | string | dog | cat of steel;;
 type 'type_of container = flat | cat of steel;;
 ```
 
-### Variables, If Statements, Control Flow
+### Variables
+
+```ocaml
+(* Simple variable without explicit type.*)
+let age = 30;;
+
+(* Simple variable with explicit type. *)
+let age : int = 30;;
+
+(* In, and, where - used for nesting, scope and multiple declaration. *)
+let age = 30 and
+let name = "John" and
+let gender = Male in
+
+let my_age = increment age in
+let my_name = capitalize name in
+let my_gender = display gender
+
+(* Arrays *)
+let my_numbers : int array = [|1; 2; 3; 4; 5|];;
+
+(* Assignment of impure data. *)
+my_numbers.(0) <- 30;;
+```
+
+### If Statements
+
+```ocaml
+(* If & else statement *)
+let is_big x =
+    if x > 10000 then
+        True
+    else
+        False;;
+
+(* Guards *)
+let switch_state x =
+    match x with
+        | 10 -> "Ten"
+        | 20 -> "Twenty"
+        | 0 -> "Zero";;
+```
+
+### Looping & Control Flow
+
+```ocaml
+(* Pure Recursive Function *)
+let rec call_inwards x =
+    if x = 0 then
+        x
+    else
+        call_inwards (x - 1);;
+
+(* For Loop *)
+let count_upwards () =
+    for i = 0 to 10 do
+        ...
+    done;;
+
+(* While Loop *)
+let run_until () =
+    let running = true in
+        while running do
+            ...
+        done;;
+
+(* Do While? / Iterator way using Seq and | *)
+```
 
 ### OOP Handling
 
