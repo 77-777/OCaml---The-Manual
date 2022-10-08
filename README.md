@@ -31,16 +31,23 @@ Click the sections below to expand.
 ### Spawning a project & building
 
 * Ecosystem & Environment
-  * dune
-  * opam
-  * LSP
-  * ocamlc
+  * dune - primary build and project manager
+  * opam - package manager
+  * LSP - server for your editor/IDE to provide intellisense.
+  * ocamlc - the Ocaml Compiler. 
+
+Please use your respective *nix package manager.
 
 `sudo apt-get install ocaml utop opam`
 
-`dune init project`
-`dune build`
-`dune exec project`
+
+`dune init proj your_project_name`
+
+
+`dune build` # cd inside.
+
+
+`dune exec your_project_name`
 
 <br>
 <br>
