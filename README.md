@@ -512,6 +512,8 @@ let myModule = (module ModuleName : moduleSignature);;
 ### Variants & Polymorphism
 
 ```ocaml
+(* Depending on how it's used, it can act as an alias, an enum or a generic. *)
+  
 type my_type = int | float | string | dog | cat of steel;;
 
 type 'type_of container = flat | cat of steel;;
@@ -636,13 +638,25 @@ john#sayName;;
 (* Accessor & Mutators *)
 ```
 
-### Interfaces (Module Types)
+### Interfaces (Module & Class Types)
 
 ```ocaml
-module My_Interface :
+module type My_Interface :
 sig
    val create = int -> string
 end;;
+  
+class type My_Interface :
+sig
+    val create = int -> string
+    method ...
+end;;
+```
+  
+### .mli Files
+  
+```ocaml
+
 ```
 
 ### Generics & Constructor Parametrization
