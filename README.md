@@ -726,11 +726,15 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 <br>
 
 <details>
-   <summary>External Libraries</summary>
+   <summary>External Dependencies</summary>
 
 ---
 
 ### Common Libraries
+
+OPAM is the official Ocaml package manager.
+
+`opam install <pkg-name>`
 
 | Library  | Purpose | Comments |
 | -------- | ------- | ----- |
@@ -764,7 +768,11 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 <details>
    <summary>A Better Standard API Reference</summary>
 
+---
+
 Work in progress. Add Jane Street extension API here as well.
+
+Click each module to expand and see their exposed functions and types.
 
 ```ocaml
 (* Importable Modules *)
@@ -776,7 +784,9 @@ Args
 Print
 
 (* Date, Time, Math*)
-
+Date
+Time
+Math
 
 (* Data Structure Modules *)
 Array
