@@ -278,6 +278,8 @@ let () =
 
 ### Regex & Levenshtein
 
+### Cryptography
+
 ### Parsing HTML/JSON/XML
 
 ### Error Handling & Exceptions
