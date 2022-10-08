@@ -672,6 +672,8 @@ This is my "adventure", diving in the functional programming paradigm with the O
 
 I will share with you what, as an imperative programmer, has been difficult for me to tackle or understand, and solutions to how one can make that transition easier. This will also act as a centralized area containing as much useful information about OCaml and it's syntax as I can get.
 
+<br>
+<br>
 
 </details>
 
