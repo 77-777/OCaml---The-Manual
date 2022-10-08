@@ -259,11 +259,17 @@ let () =
 
 ```
 
-### Regex
+### Config Storage
+
+### Regex & Levenshtein
 
 ### Parsing HTML/JSON/XML
 
 ### Error Handling & Exceptions
+
+### Timers, Events, Promises
+
+Lwt.
 
 ### Database Access / ORM
 
@@ -659,6 +665,9 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 * Side Effect
   * When a function emits the notion of modyfing state outside of it's scope such as globals or dependencies.
 
+* Unit/IO Notation
+  * Commonly known/referred as the "void" type, (), this notation is used to indicate that a function will do or "return" an IO side effect operation that changes some system/program state.
+
 * Expression
   * Also called compute/computation, is any calculation or subexpression that MUST return a value as a result. In the functional mindset, a program is a series of expressions and subexpressions but ultimately going down to a single value outputted. ("Figure of speech")
 
@@ -693,22 +702,49 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
   * Ocaml's type system for creating generics and polymorphic values.
 
 * Functors
+  * Factory pattern kin.
+
 * Lambda Calculus
+  * Anonymous function spawning notation.
+
 * Polymorphism
+  * The act of having and passing data that holds multiple "forms". A stream object for example might be a base entity for a filestream, networkstream, pipestream or whatever.
+
 * Generics
+  * Having data structures that can be reused with other types. Particularly lists. Lists of integers or bytes or strings as an example.
+
 * Meta Programming
+  * Programs written that generate other programs/code.
+
 * Dependency Injection
+  * A concept used to manage portability and hotswap, as common usecases. One implementation of dependency injection is the IoC container for dependency inversion.
+
 * Module Types
+  * Ocaml's "interfaces" to modules.
+
 * Monads
+  * 
+
 * Zippers
+  * 
 
 ### Functional Paradigm Aims
 
 * Functional Application
+  * Functional programming is all about having pure functions and calling those pure functions to transform your data. Everything is an expression and your IO should be separated and organized in a high level fashion.
+
 * Function Purity
+  * Functions without side effects that are agnostic of system state.
+
 * IO & Side Effect Separation
+  * A tremendous amount of errors, bugs and malpractice happens as a result of poor state management. Having a more organized flow where IO is separate from pure code provides clarity to where errors may occur as well as visual guidance to where program logic/computation is located.
+
 * Reduce state and constrain/isolate it
+  * Removing for, while loops is one way to reduce state and instead do things recursively.
+
 * Low Function Arity Through Currying
+
+
 * Simple & Flexible Data Transformation
 * Low Coupling, High Cohesion
 * Type Correctness
@@ -763,6 +799,7 @@ OPAM is the official Ocaml package manager.
 | PPX | Meta Programming | todo |
 | Caqti | Databases & SQL | todo |
 
+<br>
 <br>
 
 </details>
