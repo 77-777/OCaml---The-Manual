@@ -569,6 +569,24 @@ let run_until () =
 (* Do While? / Iterator way using Seq and | *)
 ```
 
+### Recursion & List Manipulation/Patterns
+
+```ocaml
+
+(* Provide base case, recursive case. *)
+
+(* Mention advanced Recursion and tail Recursion. *)
+
+let myFunction = 
+   | 0 -> ...
+   | hd :: tl -> myFunction hd tl
+
+let rec myFunction =
+   ...;;
+
+```
+
+
 ### OOP Handling
 
 ```ocaml
@@ -603,7 +621,18 @@ john#sayName;;
 
 ### Interfaces (Module Types)
 
-### Generics
+```ocaml
+module My_Interface :
+sig
+   val create = int -> string
+end;;
+```
+
+### Generics & Constructor Parametrization
+
+```ocaml
+(Jfhdzb) Result
+```
 
 ### Functors
 
