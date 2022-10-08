@@ -2,11 +2,14 @@
 
 > Pragmatic information about Functional Programming and OCaml.
 
-> Written with a belief in "learn by example" and "acquire through osmosis" approach.
+> Written with a belief in "learning by example" and "acquire through osmosis" approach.
 
 <br>
 <br>
 <br>
+
+
+DRAFT.
 
 Work in progress. Early stage. Will change abruptly.
 
