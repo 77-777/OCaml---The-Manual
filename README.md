@@ -264,6 +264,28 @@ let () =
         ]
     
 ```
+      
+### Web Automation
+
+```ocaml
+(* Example provided by https://github.com/art-w/ocaml-webdriver *)
+
+module W = Webdriver_cohttp_lwt_unix
+open W.Infix
+
+let test =
+  let* () = W.goto "https://github.com/art-w/ocaml-webdriver" in
+    let* commits = W.find_first `xpath "//a[@href='/art-w/ocaml-webdriver/commits/master']//strong" in
+      let* nb = W.text commits in
+        let nb = int_of_string nb in
+          Printf.printf "number of commits = %i\n%!" nb ;
+          W.return ()
+      
+let host = "http://127.0.0.1:4444"
+      
+let () = 
+  Lwt_main.run (W.run ~host Capabilities.firefox_headless test)
+```
 
 ### Data Structures
 
