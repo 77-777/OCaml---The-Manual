@@ -644,9 +644,28 @@ john#sayName;;
 
 ### FFI
 
+The foreign function interface for interoping with native code and the os.
+
 ### DLLs / Shared Libraries
 
+Accessing functions directly from shared libraries.
+
 ### Compiler/Interpreter Tweaks
+
+Optimization, compiling or interpreting, linking, bytecode generation, garbage collection, etc.
+
+### Project Layout & Code Structure
+
+1 module file can contain multiple nested submodules. 
+Scaffolding/ers.
+
+### Architecture
+
+Patterns. Functors and Monads.
+
+### Good Practice
+
+Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 
 <br>
 <br>
