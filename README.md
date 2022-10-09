@@ -1009,23 +1009,115 @@ Click each module to expand and see their exposed functions and types.
 
 Work in progress. Add Jane Street extension API here as well.
 
-```ocaml
 (* Importable Modules *)
 
-Sys
-Arg
-Stdlib
+<details>
+    <summary>Sys</summary>
+    
+    <details>
+        <summary>Module</summary>
+            Functions.
+    </details>
+
+</details>
+
+<details>
+    <summary>Arg</summary>
+    
+    <details>
+        <summary>Module</summary>
+            Functions.
+    </details>
+
+</details>
+
+<details>
+    <summary>Stdlib</summary>
+    
+    <details>
+        <summary>Module</summary>
+            Functions.
+    </details>
+
+</details>
 
 (* Console, File IO, Etc *)
-Printf
-Scanf
-Format
-Printexc
 
-In_Channel
-Out_Channel
-Filename
+<details>
+    <summary>Printf</summary>
+    
+    <details>
+        <summary>Module</summary>
+            Functions.
+    </details>
 
+</details>
+
+<details>
+    <summary>Scanf</summary>
+    
+    <details>
+        <summary>Module</summary>
+            Functions.
+    </details>
+
+</details>
+
+<details>
+    <summary>Format</summary>
+    
+    <details>
+        <summary>Module</summary>
+            Functions.
+    </details>
+
+</details>
+
+<details>
+    <summary>Printexc</summary>
+    
+    <details>
+        <summary>Module</summary>
+            Functions.
+    </details>
+
+</details>
+
+<details>
+    <summary>In_Channel</summary>
+    
+    <details>
+        <summary>Module</summary>
+            Functions.
+    </details>
+
+</details>
+
+
+<details>
+    <summary>Out_Channel</summary>
+    
+    <details>
+        <summary>Module</summary>
+            Functions.
+    </details>
+
+</details>
+
+
+<details>
+    <summary>Filename</summary>
+    
+    <details>
+        <summary>Module</summary>
+            Functions.
+    </details>
+
+</details>
+
+```ocaml
+
+(* Console, File IO, Etc *)
 Marshal
 Callback
 Lazy
