@@ -97,6 +97,8 @@ let () =
 
 ### Directory & File Operations
 
+* also list files in directory, todo.
+
 ```ocaml
 (* Directory & File Manipulation *)
 let () =
@@ -603,6 +605,26 @@ let myFunction () = ...;;
 
 (* First Class Module declaration. *)
 let myModule = (module ModuleName : moduleSignature);;
+```
+
+### Globals, Mutables & Object Creation
+
+```ocaml
+
+let mutable name = "my_global";;
+
+let () = 
+  name <- "some new name";
+  exit 0;;
+  
+type my_record = {
+  peanuts : int;
+  cashews  : int
+};;
+
+let () = 
+  let nuts = { peanuts : 20; cashews : 30 };;
+  exit 0
 ```
 
 ### Variants & Polymorphism
