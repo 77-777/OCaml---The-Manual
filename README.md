@@ -812,6 +812,22 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 
 ---
 
+### Facts
+
+* The LHS of `type` definitions is primarily concerned with generics. E.g `type 'a list` is the equivalent of `List<'a>`.
+* The RHS of `type` definitions is primarily concerned with **modelling** a certain type of **format** the data can take. E.g 
+* The RHS is the evaluation of an expression, which possibly means that even for `types`, the RHS still evaluates to an expression where the returned value is a type.
+
+<br>
+
+* Expression evaluation - the expression MUST terminate in returning a value. Be it a number, or a type. or a unit.
+
+<br>
+
+* Recursivity state management and advanced recursion + tail recursion.
+
+<br>
+
 ### Terminology
 
 * Purity
