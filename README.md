@@ -882,7 +882,19 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
   * Ocaml's type system for creating generics and polymorphic values.
 
 * Functors
-  * Factory pattern kin.
+  * An umbrella term that refers to "something" that produces a "result" out of "something". Another word for a function. The concept is so abstract that there are many types of functors. They are functions that behave in a particular way. It can be implemented differently based on the language. It comes from category theory where a functor is a mapping between categories. (very abstract indeed)
+    * Module Functors (dynamic modules)
+      * Functions that operate on modules. Often used to provide the factory pattern or give mutability to "instantiate" modules.
+    * Applicative Functors
+      * Functions that operate on functors. (holy cat) The end result when two invocations of the functor is done has modules/classes with non-equal abstract types.
+    * Generative Functors
+        Functions that operate on functors. (holy cat) The end result when two invocations of the functor is done has modules/classes with equal abstract types.
+    * Monoid Functors
+        Functions where the output is independent of the input.
+    
+    Functors can be used to provide **dependency injection**, **inheritance**, **virtual/abstract** objects, polymorphism, subtyping, allowing the creation of factories/ and various other patterns.
+
+* Monads - A form/type of an Applicative Functor
 
 * Lambda Calculus
   * Anonymous function spawning notation.
@@ -902,9 +914,6 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 * Module Types
   * Ocaml's "interfaces" to modules.
 
-* Monads
-  * 
-
 * Zippers
   * 
 
@@ -912,6 +921,9 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 
 * Functional Application
   * Functional programming is all about having pure functions and calling those pure functions to transform your data. Everything is an expression and your IO should be separated and organized in a high level fashion.
+  
+* Functional Ability
+  * Concepts like functors, monads, monoids and whatnot, extend the ability of what you can do in the language with functions.
 
 * Functional Purity
   * Functions without side effects that are agnostic of system state. As many as you can. Why? Said functions are easy to test, well design and don't depend on external factors. (in theory)
