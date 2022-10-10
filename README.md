@@ -984,6 +984,7 @@ OPAM is the official Ocaml package manager.
 | -------- | ------- | ----- |
 | Lwt  | Events & Promises | todo |
 | Mirage  | OCaml Platform| todo |
+| Menhir | | |
 | LablTk | GUI | todo |
 | vec | Data Structures - Dynamic Arrays | https://github.com/aionescu/vec |
 | Cryptokit | Security & Cryptography | todo |
