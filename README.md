@@ -885,12 +885,14 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
   * An umbrella term that refers to "something" that produces a "result" out of "something". Another word for a function. The concept is so abstract that there are many types of functors. They are functions that behave in a particular way. It can be implemented differently based on the language. It comes from category theory where a functor is a mapping between categories. (very abstract indeed)
     * Module Functors (dynamic modules)
       * Functions that operate on modules. Often used to provide the factory pattern or give mutability to "instantiate" modules.
+  
     * Applicative Functors
       * Functions that operate on functors. (holy cat) The end result when two invocations of the functor is done has modules/classes with non-equal abstract types.
+  
     * Generative Functors
-        Functions that operate on functors. (holy cat) The end result when two invocations of the functor is done has modules/classes with equal abstract types.
+       * Functions that operate on functors. (holy cat) The end result when two invocations of the functor is done has modules/classes with equal abstract types.
     * Monoid Functors
-        Functions where the output is independent of the input.
+       * Functions where the output is independent of the input.
     
     Functors can be used to provide **dependency injection**, **inheritance**, **virtual/abstract** objects, polymorphism, subtyping, allowing the creation of factories/ and various other patterns.
 
@@ -915,7 +917,7 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
   * Ocaml's "interfaces" to modules.
 
 * Zippers
-  * 
+  * Pointers to certain nodes/data structures, such as trees and their branches.
 
 ### Functional Paradigm Aims
 
