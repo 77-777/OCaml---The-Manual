@@ -883,11 +883,13 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 
 * Functors
   * An umbrella term that refers to "something" that produces a "result" out of "something". Another word for a function. The concept is so abstract that there are many types of functors. They are functions that behave in a particular way. It can be implemented differently based on the language. It comes from category theory where a functor is a mapping between categories. (very abstract indeed)
-    * Module Functors (dynamic modules)
+  One important thing to note is that functors __generally__, by rule, at least in practice, imply that a first class citizen function is to be passed as a parameter to the functor.
+  
+    * Module Functors (dynamic modules) [mostly what OCaml provides]
       * Functions that operate on modules. Often used to provide the factory pattern or give mutability to "instantiate" modules.
   
     * Applicative Functors
-      * Functions that operate on functors. (holy cat) The end result when two invocations of the functor is done has modules/classes with non-equal abstract types.
+      * Functions/Functors that operate on functors. (holy cat) The end result when two invocations of the functor is done has modules/classes with non-equal abstract types.
   
     * Generative Functors
        * Functions that operate on functors. (holy cat) The end result when two invocations of the functor is done has modules/classes with equal abstract types.
